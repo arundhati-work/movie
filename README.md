@@ -15,7 +15,7 @@ Welcome to Movie.com - a platform for people to discover and book tickets for a 
 
 ### 2. Movie Description Page
 
-* The Description page contains the movie poster, title, genre, rating as well as a short summary of the movie.
+* The Description page contains the movie poster, title, genre, rating, a short summary of the movie as well as the day and time for the show.
 * It contains a 'Book Ticket' button that takes the user to a form to enter more information.
 
 ### 3. User Details Form
