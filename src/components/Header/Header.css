@@ -1,0 +1,24 @@
+#header-component{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#header-component .link{
+    text-decoration: none;
+    background-color: transparent;
+    border: 2px solid #19376D;
+    padding: 10px 17px;
+    color: #19376D;
+    transition: background-color 300ms ease-in;
+}
+
+#header-component .link:hover{
+    background-color: #19376D;
+    color: #FFF;
+}
+
+#header-component .logo{
+    text-decoration: none;
+    color: #19376D;
+}
