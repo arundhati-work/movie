@@ -13,21 +13,21 @@ export default function GalleryMovie(props) {
   return (
     <NavLink to={link}>
       <div id="gallery-movie-component">
-        <img
+        <img className="movie-poster"
           src={movie.show.image ? movie.show.image.medium : NoImgAvl}
           alt={movie.show.name}
         />
-        <p>{movie.show.name}</p>
-        <div>
+        <p className="movie-title">{movie.show.name}</p>
+        <div className="rating-div">
           <img src={star} alt="Rating" />
           <p>
             {movie.show.rating.average ? movie.show.rating.average : "NA"} /
             10.0
           </p>
         </div>
-        <p>
+        <p className="genre-div">
           {movie.show.genres.map((genre) => {
-            return <span key={genre}>{genre} </span>;
+            return <span key={genre}>{genre}&nbsp;</span>;
           })}
         </p>
       </div>
