@@ -1,8 +1,18 @@
 #movie-description-component{
-    width: 80%;
     margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
+#description-component-contents{
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 2rem;
+    margin-top: 2rem;
+}
 
 #movie-description-component .title-div{
     padding: 2rem 0;
