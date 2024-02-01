@@ -31,7 +31,7 @@ export default function Confirmation(props) {
   if (loading) {
     return (
       <div className="modal">
-        <div className="confirmation-component">Loading...</div>
+        <div className="confirmation-component"><div className="loading-div"><h1>Loading...</h1></div></div>
       </div>
     );
   }
