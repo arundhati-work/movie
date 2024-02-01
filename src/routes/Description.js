@@ -4,6 +4,7 @@ import Footer from '../components/Footer/Footer';
 import { useSelector } from "react-redux";
 import { useParams } from 'react-router-dom';
 import NoImgAvl from "../assets/NoImgAvl.png";
+import { NavLink } from "react-router-dom";
 
 export default function Description() {
   function removeHtmlTags(htmlString) {
@@ -14,6 +15,7 @@ export default function Description() {
   const { id } = useParams();
   const { movies } = useSelector((state) => state.movie);
   const movie = movies.find((m) => m.show.id === parseInt(id));
+  const link = "/booking/" + movie.show.id;
 
   const cleanedSummary = removeHtmlTags(movie.show.summary);
 
@@ -46,6 +48,7 @@ export default function Description() {
         <p>{cleanedSummary}</p>
         <p>{movie.show.schedule.days[0]?movie.show.schedule.days[0] : 'Monday'}</p>
         <p>{movie.show.schedule.time?movie.show.schedule.time:'14:00'}</p>
+        <div><NavLink to={link}>Book Ticket</NavLink></div>
         <Footer/>
     </div>
   );
