@@ -84,6 +84,6 @@
     transition: background-color 300ms ease-out;
 }
 
-#movie-description-component a:hover{
+#description-component-contents a:hover{
     color: #FFF;
 }
