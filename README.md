@@ -16,16 +16,16 @@ Welcome to Movie.com - a platform for people to discover and book tickets for a 
 ### 2. Movie Description Page
 
 * The Description page contains the movie poster, title, genre, rating, a short summary of the movie as well as the day and time for the show.
-* It contains a 'Book Ticket' button that takes the user to a form to enter more information.
+* It contains a 'Book Ticket' button that takes the user to the Booking Form to enter more information.
 
-### 3. User Details Form
+### 3. Booking Form
 
 * Within the form, the name of the movie is pre-populated.
 * The form asks for details like the number of tickets followed by the choice of seat(s) between Classic, Executive and Premium.
 * Based on the entered info, the total amount to be paid is displayed on the screen.
-* The 'Continue to Payment' button takes the user to the Booking Confirmed Page.
+* The 'Continue to Payment' button takes the user to the Booking Confirmation Page.
 
-### 4. Booking Confirmed Page
+### 4. Booking Confirmation Page
 * This page shows details like the movie poster, title, day, date and time for the show.
 * The page also displays the number of tickets booked, the auditorium for the movie and the seats reserved for the user.
 * The total amount paid by the user is displayed at the end.
@@ -38,4 +38,5 @@ Welcome to Movie.com - a platform for people to discover and book tickets for a 
 
 ## Instructions to run the Application
 
-_**TBD**_
+* Clone the repository into your device.
+* Run **npm start** in terminal from the project location.
