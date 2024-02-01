@@ -1,0 +1,66 @@
+#movie-description-component{
+    width: 80%;
+    margin: 1rem auto;
+}
+
+#movie-description-component .title-div{
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#movie-description-component .movie-title{
+    font-size: 25px;
+    color: #3B3939;
+    font-weight: 600;
+}
+
+#movie-description-component .movie-rating{
+    font-weight: 500;
+    color: #3B3939;
+}
+
+#movie-description-component .movie-genre{
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: 500;
+    color: #3B3939;
+}
+
+
+#movie-description-component h3{
+    margin: 0;
+    padding-top: 10px;
+}
+
+#movie-description-component .timings-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#movie-description-component .book-tickets-btn{
+    width: 70%;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #3B3939;
+    padding: 13px 0; 
+    transition: background-color 300ms ease-out;
+}
+
+#movie-description-component .book-tickets-btn:hover{
+    background-color: #3B3939;
+}
+
+#movie-description-component a{
+    color: #3B3939;
+    font-weight: 600;
+    transition: background-color 300ms ease-out;
+}
+
+#movie-description-component a:hover{
+    color: #FFF;
+}

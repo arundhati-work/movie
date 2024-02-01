@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import '../styles/Gallery.css';
 import { useSelector, useDispatch } from "react-redux";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
@@ -26,12 +27,12 @@ export default function Gallery() {
 
 
   return (
-    <div id="dashboard-route">
+    <div id="gallery-route">
       <Header/>
       <div className="main-container">
       {movies.length? (
           movies.map((movie) => {
-            return <GalleryMovie  key={movie.show.id} id={movie.show.id}/>
+            return <GalleryMovie key={movie.show.id} id={movie.show.id}/>
             
 })
         ) : (
