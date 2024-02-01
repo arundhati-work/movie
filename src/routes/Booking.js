@@ -45,6 +45,7 @@ export default function Booking() {
   return (
     <div id="booking-component">
       <Header />
+      <div id="booking-component-contents">
       <div className="title-div">
         <p>Movie</p> <span className="movie-title">{movie.show.name}</span>
       </div>
@@ -73,6 +74,8 @@ export default function Booking() {
           />,
           document.getElementById("modal-root")
         )}
+      </div>
+      
       <Footer />
     </div>
   );
