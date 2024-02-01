@@ -1,0 +1,58 @@
+#booking-component{
+    width: 80%;
+    margin: 1rem auto;
+}
+
+#booking-component .title-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+#booking-component .movie-title{
+    border: 1px solid black;
+    width: 70%;
+    padding: 7px 13px;
+    font-size: 1rem;
+}
+
+#booking-component .tickets-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#booking-component form{
+    width: 70%;
+}
+
+#booking-component input{
+    width: 50%;
+    padding: 7px 13px;
+}
+
+#booking-component .total-div{
+    width: 100%;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#booking-component .payment-btn{
+    width: 70%;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #3B3939;
+    padding: 13px 0; 
+    background-color: #FFF;
+    font-weight: 500;
+    transition: background-color 300ms ease-out;
+}
+
+#booking-component .payment-btn:hover{
+    background-color: #3B3939;
+    color: #FFF;
+}

@@ -1,0 +1,20 @@
+#chair-container{
+    width: 80%;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#chair-container .chair-div{
+    padding: 1rem;
+    width: 5rem;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+#chair-container .chair-div .chair-name{
+    font-weight: 500;
+}

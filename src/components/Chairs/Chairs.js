@@ -36,12 +36,12 @@ export default function Chairs(props) {
 
 
   return (
-    <div className='chair-container'>
+    <div id='chair-container'>
       {
         chairOptions.map((chair)=>{
-          return <div style={{border: chair.id===isActive? '1px solid black': ''}} key={chair.id} onClick={() => chairSelection(chair)}>
+          return <div className='chair-div' style={{border: chair.id===isActive? '1px solid black': ''}} key={chair.id} onClick={() => chairSelection(chair)}>
             <img src={chair.image} alt={chair.name}/>
-      <p>{chair.name}</p>
+      <p className='chair-name'>{chair.name}</p>
       <p>Rs. {chair.price}</p>
           </div>
         })
