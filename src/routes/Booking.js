@@ -3,9 +3,10 @@ import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
 import { useParams } from 'react-router-dom';
 import { useSelector } from "react-redux";
-import { NavLink } from "react-router-dom";
+import { createPortal } from 'react-dom';
 
 import Chairs from '../components/Chairs/Chairs';
+import Confirmation from '../components/Confirmation/Confirmation';
 
 
 
@@ -17,6 +18,7 @@ export default function Booking() {
   const [chairPrice, setChairPrice] = useState(0);
   const [tickets, setTickets] = useState(1);
   const [totalAmount, setTotalAmount] = useState(200);
+  const [showModal, setShowModal] = useState(false);
 
   const selectedChair = (chair) => {
     setChairName(chair.name);
@@ -47,7 +49,12 @@ export default function Booking() {
       <input type='number' value={tickets} onChange={(e)=>inputOnChange(e)}/>
       <Chairs selection={(chair)=>selectedChair(chair)}/>
       <p>Total Amount: {totalAmount}</p>
-      <div>Continue to Payment</div>
+      <button onClick={() => setShowModal(true)}>Continue to Payment</button>
+      {
+        showModal && createPortal(
+          <Confirmation id={movie.show.id} chairName={chairName} tickets={tickets} amount={totalAmount}/>, document.getElementById('modal-root')
+        )
+      }
       <Footer/>
     </div>
   )
