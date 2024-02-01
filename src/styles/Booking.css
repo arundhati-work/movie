@@ -1,6 +1,14 @@
 #booking-component{
-    width: 80%;
     margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#booking-component-contents{
+    width: 80%;
+    max-width: 600px;
 }
 
 #booking-component .title-div{
@@ -12,7 +20,7 @@
 
 #booking-component .movie-title{
     border: 1px solid black;
-    width: 70%;
+    width: 50%;
     padding: 7px 13px;
     font-size: 1rem;
 }
@@ -24,11 +32,11 @@
 }
 
 #booking-component form{
-    width: 70%;
+    width: 50%;
 }
 
 #booking-component input{
-    width: 50%;
+    width: 90%;
     padding: 7px 13px;
 }
 
