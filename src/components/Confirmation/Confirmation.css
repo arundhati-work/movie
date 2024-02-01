@@ -1,17 +1,95 @@
 .modal{
     height: 100vh;
     width: 100vw;
-    top: 5rem;
+    top: 0;
     left: 0;
     position: absolute;
     z-index: 999;
     background-color: rgba(226, 226, 226, 0.8);
-    
+    margin-bottom: 0;
 }
 
-.modal .confirmation-component{
-    background-color: #ffffff;
+.modal #confirmation-component{
+    background-color: #4C4C4C;
+    color: #FFF;
     margin: 2rem auto;
     height: 80%;
-    width: 80%;
+    width: 70%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0;
+    max-width: 400px;
+}
+
+#confirmation-component .confirm-title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#confirmation-component .gallery-link{
+    text-align: right;
+}
+
+#confirmation-component .gallery-link a{
+    color: #FFF;
+}
+
+
+
+#confirmation-component .movie-poster{
+    width: 90%;
+    height: auto;
+}
+
+#confirmation-component .title-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#confirmation-component .image-div{
+    width: 35%;
+}
+
+#confirmation-component .movie-title{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#confirmation-component .ticket-info-div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#confirmation-component .ticket-info-div p{
+    margin: 7px;
+}
+
+#confirmation-component .audi-info{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+#confirmation-component .amount-div{
+    font-weight: 500;
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+#confirmation-component .amount-div p{
+    margin: 0;
+    margin-top: 2rem;
 }
