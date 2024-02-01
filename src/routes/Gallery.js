@@ -17,7 +17,7 @@ export default function Gallery() {
 
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <div className="loading-div"><h1>Loading...</h1></div>;
   }
 
   if (error) {
