@@ -1,6 +1,6 @@
 # Movie.com
 
-The design files for this app can be found [here](https://www.figma.com/file/l9rBOFus45fGp9ROukm9CA/movie.com?type=design&node-id=0%3A1&mode=design&t=NEMhoZo5HCYg79BE-1).
+The rough design file for this app can be found [here](https://www.figma.com/file/l9rBOFus45fGp9ROukm9CA/movie.com?type=design&node-id=0%3A1&mode=design&t=NEMhoZo5HCYg79BE-1).
 
 ## Introduction
 
